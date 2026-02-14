@@ -1,0 +1,147 @@
+body {
+	font-family: Tahoma, sans-serif;
+	color: #3b2f2f;
+	background: radial-gradient(circle at top, #fff3e8, #f4e9df);
+	line-height: 1.6;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+h1 {
+	font-family: Georgia, serif;
+	letter-spacing: 0.5px;
+	text-align: center;
+	border-bottom: #3b2f2f 2px dashed;
+	padding-top: 50px;
+	padding-bottom: 16px;
+}
+
+h2,
+h3,
+h4 {
+	font-family: Georgia, serif;
+	letter-spacing: 0.5px;
+}
+
+p {
+	margin-top: 12px;
+}
+
+.container {
+	width: min(1100px, 90%);
+	margin: 0 auto;
+}
+
+.layout {
+	display: grid;
+	gap: 40px;
+	grid-template-columns: minmax(0, 3fr) minmax(0, 1fr);
+	grid-template-areas:
+		"intro sidebar"
+		"restaurants sidebar"
+		"contact sidebar";
+	padding: 40px 0 48px;
+}
+
+.intro,
+.contact,
+.sidebar {
+	background: #fffaf5;
+	border: 1px solid #e6d9cf;
+	border-radius: 12px;
+	padding: 24px;
+}
+
+.intro {
+	grid-area: intro;
+}
+
+.restaurants {
+	display: grid;
+	gap: 40px;
+	grid-area: restaurants;
+}
+
+.restaurant {
+	background: #fffaf5;
+	border: 1px solid #e6d9cf;
+	border-radius: 14px;
+	padding: 28px;
+	display: grid;
+	gap: 16px;
+}
+
+.restaurant h3 {
+	font-size: 26px;
+}
+
+.restaurant-image {
+	display: grid;
+	gap: 8px;
+	color: #6b5b5b;
+	font-size: 14px;
+}
+
+.restaurant-image figcaption {
+	text-align: center;
+}
+
+.restaurant-image img {
+	width: 300px;
+	height: 300px;
+	border-radius: 10px;
+	margin: 0 auto;
+}
+
+.dish-grid {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	margin-top: 8px;
+}
+
+.dish-card {
+	background: #fffaf5;
+	border: 1px solid #e6d9cf;
+	border-radius: 12px;
+	padding: 16px;
+	display: grid;
+	gap: 12px;
+	align-content: start;
+}
+
+.dish-card h4 {
+	font-size: 18px;
+}
+
+.dish-card p {
+	color: #6b5b5b;
+	margin-top: 0;
+}
+
+.sidebar {
+	grid-area: sidebar;
+	height: fit-content;
+	position: sticky;
+	top: 20px;
+}
+
+.contact {
+	grid-area: contact;
+}
+
+.contact p {
+	color: #6b5b5b;
+}
+
+.site-footer {
+	border-top: 1px solid #e6d9cf;
+	background: #f6e6d7;
+	padding: 24px 0 32px;
+	color: #6b5b5b;
+}
