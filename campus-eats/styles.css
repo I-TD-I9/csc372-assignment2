@@ -145,3 +145,43 @@ p {
 	padding: 24px 0 32px;
 	color: #6b5b5b;
 }
+
+.dish-price {
+	font-weight: bold;
+}
+
+.favorite-button {
+	background: #f4a460;
+	color: white;
+	padding: 8px;
+}
+
+.dish-card.favorited {
+	border: 2px solid #f4a460;
+}
+
+.favorites-summary {
+	background: white;
+	border: 1px solid #e6d9cf;
+	padding: 20px;
+	margin: 20px auto;
+	width: min(1100px, 90%);
+}
+
+.favorites-items {
+	padding: 0;
+}
+
+.favorite-item {
+	display: flex;
+	justify-content: space-between;
+	padding: 8px 0;
+}
+
+.favorites-total {
+	font-weight: bold;
+	text-align: right;
+	margin-top: 10px;
+	padding-top: 10px;
+	border-top: 1px solid #e6d9cf;
+}
